@@ -1,0 +1,11 @@
+header {
+    background: #192639;
+}
+
+.solutions-title {
+    padding-top: 80px;
+}
+
+.dropdown-menu.open {
+    height: 45px;
+}

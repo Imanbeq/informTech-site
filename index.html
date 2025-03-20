@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" async></script>
+    <script src="translate.js" async></script>
+</head>
+<body>
+    <div class="video-wrapper">
+        <header>
+            <div class="navbar ">
+                    <div class="logo"><a href="#home"><img src="assets/img/nav-img.png"></a></div>
+                
+                    <ul class="links">
+                        <li><a href="#home" data-key="home">Home</a></li>
+                        <li><a href="#about" data-key="about">About</a></li>
+                        <li><a href="#solutions" data-key="solutions">Solutions</a></li>
+<!--                        <li><a href="#references" data-key="references">References</a></li>-->
+                        <li><a href="#contact" data-key="contact">Contact us</a></li>
+                    </ul>
+
+                    <div class="navbar-block">
+                       <div class="toggle-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                        <div class="switch-block">
+                        <a href="#" class="action-btn" data-key="call">Call Us</a>
+                        <button id="ru" class="lang-ru" style="display: block;"><img src="assets/img/rus.png" alt="ruflag"></button>
+                        <button id="eng" class="lang-eng" style="display: none;"><img src="assets/img/english.png" alt="ruflag"></button>
+                        </div> 
+                    </div>
+            </div>
+        
+            <div class="dropdown-menu">
+                <li><a href="#home" data-key="home">Home</a></li>
+                <li><a href="#about" data-key="about">About</a></li>
+                <li><a href="services.html" data-key="solutions">Solutions</a></li>
+<!--                <li><a href="#references" data-key="references">References</a></li>-->
+                <li><a href="#contact" data-key="contact">Contact us</a></li>
+            </div>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2 data-key="contact">Contact Us</h2>
+                    <div class="contacts-form">
+                        <form>
+                            <div class="form-wrapper">
+                                <div class="form-input">
+                                    <label data-key="surname">Name Surname</label>
+                                    <input type="text">
+                                </div>
+                                <div class="form-input">
+                                    <label data-key="company">Company</label>
+                                    <input type="text">
+                                </div>
+                                <div class="form-input">
+                                    <label data-key="email">Email</label>
+                                    <input type="text">
+                                </div>
+                                <div class="form-input">
+                                    <label data-key="phone">Phone</label>
+                                    <input type="text">
+                                </div>
+                                <div class="form-input">
+                                    <label data-key="message">Your Message</label>
+                                    <textarea class="one-line"></textarea>
+                                </div>
+                            </div>
+                            <button type="button" data-key="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    
+    <div id="home" class="hero">
+
+            <div class="video-background">
+                <video autoplay muted loop id="myVideo">
+                    <source src="assets/video9.mp4">
+                </video>
+            </div>
+
+            <div class="hero-info">
+                <h1 data-key="hero">Your Reliable Solutions</br>In Digital Security</h1>
+            </div>
+    </div>
+    
+    <div id="about" class="about container">
+                <img src="assets/img/good-team.gif" alt="">
+
+                <div class="about-info">
+
+                    <h1 data-key="aboutTitle">Who We Are</h1>
+                    <p data-key="aboutText">
+                        As a leading provider of cutting-edge technologies and cutting-edge services,
+                        Salvor offers scalable solutions to any company, large or small.
+                        Our company, which entered the sector when a group of friends started by writing their ideas on a piece of paper,
+                        offers smart and innovative services to our customers. Join our rapidly growing customer portfolio!
+                        Contact now for more information.
+                    </p>
+                    <a href="#contact" class="action-btn" data-key="contactUs">Contact Us</a>
+                </div>
+    </div>
+
+    <div class="background-img1">
+            <div class="info-block">
+                <div class="container">
+                    <h1 data-key="infoTitle">
+                    We provide tailored solutions to meet your specific needs, assisting your business in achieving its goals.
+                    </h1>
+                </div>
+            </div>
+    </div>
+
+    <div id="solutions" class="solutions container">
+        <div class="solutions-title">
+            <h1 data-key="solutionsTitle">Services</h1>
+            <h2 data-key="solutionsSubtitle">We elevate your business processes </br> to the next level.</h2>
+        </div>
+    
+        <div class="solutions-box">
+            <div class="solutions-box-item">
+                <div><i class="fa-solid fa-shield"></i></div>
+                <div><h3 data-key="solutionCybersecurityTitle">Cyber Security</h3></div>
+                <div><p data-key="solutionCybersecurityDescription">
+                    Let's ensure the security of your organization with expert personnel using current methodologies.
+                </p></div>
+            </div>
+            <div class="solutions-box-item">
+                <div><i class="fa-solid fa-box-open"></i></div>
+                <div><h3 data-key="solutionStorageTitle">Storage Solutions</h3></div>
+                <div><p data-key="solutionStorageDescription">
+                    Ensure business continuity and data security with scalable, tailored storage solutions. Our expert team optimizes data management to meet your needs effectively.
+                </p></div>
+            </div>
+            <div class="solutions-box-item">
+                <div><i class="fa-solid fa-cloud"></i></div>
+                <div><h3 data-key="solutionCloudTitle">Cloud Solutions</h3></div>
+                <div><p data-key="solutionCloudDescription">
+                    Let's facilitate the transition to prevalent cloud technologies by providing consultancy and managing services.
+                </p></div>
+            </div>
+        </div>
+        
+        <div class="solutions-btn">
+            <a href="services.html" class="action-btn" data-key="seeAll">See All</a>
+        </div>
+
+
+</div>
+
+        
+    <div class="background-img2">
+           <div id="stat" class="statistics-info">
+            <div class="container">
+                <h1 data-key="statTitle">We are very good with numbers!</h1>
+                <div class="stat-info-block">
+                <div class="stat-info-item">
+                    <span>30</span>
+                    <h2 data-key="statText1">Years of Experience</h2>
+                </div>
+                <div class="stat-info-item">
+                    <span>+200</span>
+                    <h2 data-key="statText2">Complete Projects</h2>
+                </div>
+                <div class="stat-info-item">
+                    <span>100%</span>
+                    <h2 data-key="statText3">Customer Satisfaction</h2>
+                </div>
+                </div>
+            </div>
+            
+        </div> 
+    </div>
+        
+
+    <div id="references" class="references container">
+                <div class="references-title">
+                    <h1 data-key="referencesTitle">References</h1>
+                    <span data-key="referencesText">Some of the customers we work with.</span>
+                </div>
+                <div class="references-block">
+                    <div class="references-row">
+                        <img src="assets/img/references/1.png" alt="">
+                        <img src="assets/img/references/2.png" alt="">
+                        <div>
+                            <img class="img-padding" src="assets/img/references/3.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="references-row">
+                        <img src="assets/img/references/4.webp" alt="">
+                        <img src="assets/img/references/5.webp" alt="">
+                        <img src="assets/img/references/11.svg" alt="">
+                    </div>
+                    <div class="references-row">
+                        <img src="assets/img/references/7.png" alt="">
+                        <img src="assets/img/references/8.png" alt="">
+                        <img src="assets/img/references/10.jpg" alt="">
+                    </div>
+                </div>
+    </div>
+    
+
+    <div id="contact" class="contacts container">
+                <div class="contacts-title">
+                    <h1 data-key="contactTitle">Contact</h1>
+                        <p data-key="contactSubtitle">
+                            For more information, please leave your message with your contact </br> information.
+                            We will contact you as soon as possible.
+                        </p>
+                </div>
+                
+                <div class="contacts-block">
+                    <div class="contacts-info">
+                        <h2 data-key="contactUs">Contacts Us</h2>
+<!--                        <div class="contacts-info-text">-->
+<!--                            <i class="fa-solid fa-location-dot icon-start"></i>-->
+<!--                            <span data-key="contactAddress">Anel İş Merkezi, Kat 11, Yamanevler Mahallesi, Site Yolu Caddesi, No:5/4 34768 Ümraniye / İSTANBUL / TÜRKİYE</span>-->
+<!--                        </div>-->
+                        <div class="contacts-info-text">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+996 707 600 006 /  +996755 558 855</span>
+                        </div>
+                        <div class="contacts-info-text">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Info@salvor.kg</span>
+                        </div>
+                    </div>
+                    <div class="contacts-form">
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"> 
+                            <!-- ДОБАВИТЬ КЛЮЧ ИЗ FORMSPREE -->
+                            <div class="form-wrapper">
+                                <div class="form-block">
+                                    <div class="form-input">
+                                        <label data-key="surname">Name Surname</label>
+                                        <input type="text" name="name" required>
+                                    </div>
+                                    <div class="form-input">
+                                        <label data-key="company">Company</label>
+                                        <input type="text" name="company">
+                                    </div>
+                                </div>
+                                <div class="form-block">
+                                    <div class="form-input">
+                                        <label data-key="email">Email</label>
+                                        <input type="email" name="email" required>
+                                    </div>
+                                    <div class="form-input">
+                                        <label data-key="phone">Phone</label>
+                                        <input type="tel" name="phone">
+                                    </div>
+                                </div>
+                                <div class="form-input">
+                                    <label data-key="message">Your Message</label>
+                                    <textarea name="message"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" data-key="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+    </div>
+
+    <footer>
+            
+            <ul class="links">
+                    <li><a href="#home" data-key="home">Home</a></li>
+                    <li><a href="#about" data-key="about">About</a></li>
+                    <li><a href="#solutions" data-key="solutions">Solutions</a></li>
+                    <li><a href="#references" data-key="references">References</a></li>
+                    <li><a href="#contact" data-key="contact">Constact us</a></li>
+            </ul>
+
+            <p>©2023 Salvor All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
